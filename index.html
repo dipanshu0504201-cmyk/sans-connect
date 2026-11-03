@@ -1,70 +1,161 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SANS – an Emotion | Connect With Us</title>
-  <meta name="description" content="Connect with SANS – an Emotion on Instagram, Google, or WhatsApp.">
-  <style>
-    :root { --red:#a91f24; --gold:#c99743; --cream:#fffaf2; --ink:#302522; }
-    * { box-sizing:border-box; }
-    body {
-      margin:0; min-height:100vh; display:flex; align-items:center; justify-content:center;
-      padding:24px; font-family:Arial,Helvetica,sans-serif; color:var(--ink);
-      background:radial-gradient(circle at top, #fff 0%, var(--cream) 65%, #f7ead8 100%);
-    }
-    .card {
-      width:min(100%,430px); text-align:center; padding:34px 24px 28px;
-      background:rgba(255,255,255,.88); border:2px solid var(--gold);
-      border-radius:28px; box-shadow:0 14px 40px rgba(80,35,20,.10);
-      position:relative; overflow:hidden;
-    }
-    .card:before {
-      content:""; position:absolute; width:190px; height:250px; right:-105px; top:-70px;
-      background:var(--red); border-radius:50%; opacity:.08;
-    }
-    .brand { color:var(--red); font-family:Georgia,serif; font-size:56px; letter-spacing:1px; line-height:1; font-weight:bold; }
-    .tagline { color:var(--red); font-family:Georgia,serif; font-style:italic; margin:8px 0 24px; }
-    .eyebrow { color:var(--gold); font-size:12px; font-weight:bold; letter-spacing:3px; text-transform:uppercase; }
-    h1 { font-family:Georgia,serif; font-size:30px; color:var(--red); margin:10px 0 8px; }
-    p { margin:0 0 24px; line-height:1.5; color:#6d5a50; }
-    .links { display:grid; gap:13px; }
-    .btn {
-      display:flex; align-items:center; justify-content:center; gap:12px; width:100%;
-      text-decoration:none; padding:16px 18px; border-radius:14px; font-size:16px;
-      font-weight:700; transition:transform .15s ease, box-shadow .15s ease;
-      border:1px solid var(--red); color:white; background:var(--red);
-      box-shadow:0 5px 12px rgba(169,31,36,.12);
-    }
-    .btn:hover { transform:translateY(-2px); box-shadow:0 8px 18px rgba(169,31,36,.18); }
-    .btn.google { background:#fff; color:var(--red); border-color:var(--gold); }
-    .btn.whatsapp { background:#fff; color:#326b45; border-color:#8bb99a; }
-    .icon { font-size:20px; }
-    .footer { font-size:12px; color:#927b6a; margin-top:25px; }
-    .heart { color:var(--red); }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>7SANS – an Emotion</title>
+
+<style>
+:root {
+  --red: #a91f24;
+  --gold: #c99743;
+  --cream: #fffaf2;
+  --dark: #302522;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #fffaf2, #f8ead8);
+}
+
+.card {
+  width: 100%;
+  max-width: 430px;
+  text-align: center;
+  padding: 35px 25px;
+  background: #fff;
+  border: 2px solid var(--gold);
+  border-radius: 25px;
+  box-shadow: 0 10px 35px #00000012;
+}
+
+.brand {
+  font-family: Georgia, serif;
+  font-size: 58px;
+  font-weight: bold;
+  color: var(--red);
+  letter-spacing: 2px;
+}
+
+.tagline {
+  color: var(--red);
+  font-family: Georgia, serif;
+  font-style: italic;
+  margin: 5px 0 25px;
+}
+
+h1 {
+  font-family: Georgia, serif;
+  font-size: 30px;
+  color: var(--red);
+  margin-bottom: 10px;
+}
+
+p {
+  color: #76645a;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.btn {
+  display: block;
+  padding: 16px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background: var(--red);
+  border: 1px solid var(--red);
+  transition: 0.2s;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  opacity: 0.9;
+}
+
+.google {
+  background: white;
+  color: var(--red);
+  border-color: var(--gold);
+}
+
+.whatsapp {
+  background: white;
+  color: #267346;
+  border-color: #7eb693;
+}
+
+.footer {
+  margin-top: 25px;
+  font-size: 12px;
+  color: #9a8170;
+}
+
+</style>
 </head>
+
 <body>
-  <main class="card">
-    <div class="brand">SANS</div>
-    <div class="tagline">…an Emotion</div>
-    <div class="eyebrow">Stay connected</div>
-    <h1>Homemade with Love</h1>
-    <p>Follow us, discover our bakery, or say hello.<br>We’d love to connect with you!</p>
 
-    <div class="links">
-      <a class="btn" href="https://www.instagram.com/7sans_an_emotion/" target="_blank" rel="noopener">
-        <span class="icon">◎</span> Follow us on Instagram
-      </a>
-      <a class="btn google" href="https://www.google.com/search?q=7sans+the+cake+boutique&amp;ie=UTF-8&amp;oe=UTF-8&amp;hl=en-in&amp;client=safari&amp;authuser=7#ebo=0" target="_blank" rel="noopener">
-        <span class="icon">★</span> Find us on Google
-      </a>
-      <a class="btn whatsapp" href="https://wa.me/9187057707" target="_blank" rel="noopener">
-        <span class="icon">☏</span> Chat with us on WhatsApp
-      </a>
-    </div>
+<div class="card">
 
-    <div class="footer">Made with <span class="heart">♥</span> by SANS – an Emotion</div>
-  </main>
+  <div class="brand">7SANS</div>
+
+  <div class="tagline">…an Emotion</div>
+
+  <h1>Homemade with Love</h1>
+
+  <p>
+    Discover our world of delicious treats.<br>
+    Connect with us!
+  </p>
+
+  <div class="buttons">
+
+    <a class="btn"
+       href="https://www.instagram.com/7sans_an_emotion/"
+       target="_blank">
+       ◎ Follow us on Instagram
+    </a>
+
+    <a class="btn google"
+       href="https://www.google.com/search?q=7sans+the+cake+boutique"
+       target="_blank">
+       ★ Find us on Google
+    </a>
+
+    <a class="btn whatsapp"
+       href="http://wa.me/9187057707"
+       target="_blank">
+       ☎ Chat with us on WhatsApp
+    </a>
+
+  </div>
+
+  <div class="footer">
+    Made with ♥ by 7SANS – an Emotion
+  </div>
+
+</div>
+
 </body>
 </html>
